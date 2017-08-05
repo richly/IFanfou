@@ -1,0 +1,18 @@
+<!-- app的首页-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title><%=htmlWebpackPlugin.options.pageName%><%htmlWebpackPlugin.options.projectName%></title>
+        <script type="text/javascript">
+            var __VERSION = '<%=htmlWebpackPlugin.options.version%>'
+            ,__ENV = '<%=htmlWebpackPlugin.options.env%>'
+            ,__PROJECT = '<%=htmlWebpackPlugin.options.projectName%>';
+        </script>
+        <div id="app"></div>
+        <script src="<%=htmlWebpackPlugin.options.libPath%>vue/vue<%=htmlWebpackPlugin.options.min%>.js?v=2.2.4"></script>
+        <script src="<%=htmlWebpackPlugin.options.libPath%>vuex/vuex<%=htmlWebpackPlugin.options.min%>.js?v=2.2.4"></script>
+
+        <script src="<%=htmlWebpackPlugin.options.libPath%>vue/vue-router.min.js?v=2.2.1"></script>
+    </head>
+</html>
